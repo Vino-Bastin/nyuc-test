@@ -1,0 +1,18 @@
+{
+  "cSpell.words": [
+    "appspot",
+    "doesn",
+    "exceljs",
+    "firebaseapp",
+    "hookform",
+    "Interakt",
+    "lucide",
+    "nyuc",
+    "sonner",
+    "swal",
+    "tanstack"
+  ],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2
+}
