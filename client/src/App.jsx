@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import NotFound from "./pages/404";
 import UploadImage from "./features/uploadImage";
 import UploadResume from "./features/uploadResume";
+import GalleryView from "./features/uploadImage/galleryView";
 
 import { Toaster } from "./components/ui/sonner";
 
@@ -19,8 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="upload-image" element={<UploadImage />} />
-            <Route path="upload-resume" element={<UploadResume />} />
+            <Route path="/resume" element={<UploadResume />} />
+            <Route path="/gallery" element={<UploadImage />} />
+            <Route path="/gallery/:identifier" element={<GalleryView />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

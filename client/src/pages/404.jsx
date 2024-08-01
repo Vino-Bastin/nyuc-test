@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const NotFound = () => {
+const NotFound = ({ message }) => {
   return (
     <div className="flex flex-col items-center justify-center min-h-[100dvh] gap-8 px-4 py-12 md:py-24">
       <FrownIcon className="h-32 w-32 text-gray-500 dark:text-gray-400" />
       <div className="space-y-2 text-center">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-          Oops! Page not found.
+          {message ? message : "Oops! Page not found."}
         </h1>
         <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
           The page you&apos;re looking for doesn&apos;t exist or has been moved.
@@ -21,6 +22,10 @@ const NotFound = () => {
       </Link>
     </div>
   );
+};
+
+NotFound.propTypes = {
+  message: PropTypes.string,
 };
 
 function FrownIcon(props) {

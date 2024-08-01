@@ -8,10 +8,10 @@ const Home = () => {
       <p className="text-lg font-semibold">Welcome to the Home page!</p>
       <div className="space-x-3">
         <Button size="sm">
-          <Link to="/upload-image">Upload Image</Link>
+          <Link to="/resume">Resume</Link>
         </Button>
         <Button size="sm">
-          <Link to="/upload-resume">Upload Resume</Link>
+          <Link to="/gallery">Gallery</Link>
         </Button>
       </div>
     </div>

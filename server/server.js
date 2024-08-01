@@ -28,6 +28,7 @@ app.use(
 app.use(express.static(path.join(__dirname, "../client/dist")));
 
 app.use("/api/v1/users", require("./routes/users"));
+app.use("/api/v1/gallery", require("./routes/gallery"));
 
 // * sending react build files
 app.use("*", (req, res) => {
